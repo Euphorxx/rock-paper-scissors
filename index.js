@@ -63,6 +63,6 @@ console.log(`Final Results:`)
 console.log(`Total Human Score: ${humanScore}`);
 console.log(`Total Computer Score: ${computerScore}`);
 
-if (humanScore === computerScore) alert(`You vs Computer: ${humanScore} — ${computerScore} \n\nIt's a tie! Reload to play again.`);
-if (humanScore > computerScore) alert(`You vs Computer: ${humanScore} — ${computerScore} \n\nYou Won! Reload to play again.`);
-if (humanScore < computerScore)alert(`You vs Computer: ${humanScore} — ${computerScore} \n\nYou Lose! Reload to play again.`);
+if (humanScore === computerScore) alert(`You vs Computer: ${humanScore} — ${computerScore} \nIt's a tie! Reload to play again.`);
+if (humanScore > computerScore) alert(`You vs Computer: ${humanScore} — ${computerScore} \nYou Won! Reload to play again.`);
+if (humanScore < computerScore)alert(`You vs Computer: ${humanScore} — ${computerScore} \nYou Lose! Reload to play again.`);
