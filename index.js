@@ -58,3 +58,7 @@ playGame();
     console.log(`Round 5:`)
     console.log(`Your Score: ${humanScore}`);
     console.log(`Computer Score: ${computerScore}`);
+
+console.log(`Final Results:`)
+console.log(`Total Human Score: ${humanScore}`);
+console.log(`Total Computer Score: ${computerScore}`);
