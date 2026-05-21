@@ -27,21 +27,14 @@ function playGame() {
 
     function playRound()  {
         if (humanChoice == computerChoice) {return alert(`${humanChoice} vs ${computerChoice} — It's a draw!`);
-        } else if (humanChoice === rock, computerChoice === paper) {return alert(`${humanChoice} vs ${computerChoice} — Computer wins!`), computerScore = computerScore++;
-        } else if (humanChoice === paper, computerChoice === rock) {return alert(`${humanChoice} vs ${computerChoice} — Human wins!`), humanScore = humanScore++;
-        } else if (humanChoice === rock, computerChoice === scissors) {return alert(`${humanChoice} vs ${computerChoice} — Human wins!`), humanScore = humanScore++;
-        } else if (humanChoice === scissors, computerChoice === rock) {return alert(`${humanChoice} vs ${computerChoice} — Computer wins!`), computerScore = computerScore++;
-        } else if (humanChoice === paper, computerChoice === scissors) {return alert(`${humanChoice} vs ${computerChoice} — Computer wins!`), computerScore = computerScore++;
-        } else if (humanChoice === scissors, computerChoice === paper) {return alert(`${humanChoice} vs ${computerChoice} — Human wins!`), humanScore = humanScore++;
-        } else {return alert('Cancelled')};
-
+        } else if (humanChoice === rock && computerChoice === paper) {return alert(`${humanChoice} vs ${computerChoice} — Computer wins!`),computerScore++;
+        } else if (humanChoice === paper && computerChoice === rock) {return alert(`${humanChoice} vs ${computerChoice} — Human wins!`),humanScore++;
+        } else if (humanChoice === rock && computerChoice === scissors) {return alert(`${humanChoice} vs ${computerChoice} — Human wins!`),humanScore++;
+        } else if (humanChoice === scissors && computerChoice === rock) {return alert(`${humanChoice} vs ${computerChoice} — Computer wins!`),computerScore++;
+        } else if (humanChoice === paper && computerChoice === scissors) {return alert(`${humanChoice} vs ${computerChoice} — Computer wins!`),computerScore++;
+        } else if (humanChoice === scissors && computerChoice === paper) {return alert(`${humanChoice} vs ${computerChoice} — Human wins!`),humanScore++;}
     }
 
     playRound();
-    console.log(`Your Score: ${humanScore}`);
-    console.log(`Computer Score: ${computerScore}`);
-
 }
-
-
 
