@@ -38,3 +38,23 @@ function playGame() {
     playRound();
 }
 
+playGame();
+    console.log(`Round 1:`)
+    console.log(`Your Score: ${humanScore}`);
+    console.log(`Computer Score: ${computerScore}`);
+playGame();
+    console.log(`Round 2:`)
+    console.log(`Your Score: ${humanScore}`);
+    console.log(`Computer Score: ${computerScore}`);
+playGame();
+    console.log(`Round 3:`)
+    console.log(`Your Score: ${humanScore}`);
+    console.log(`Computer Score: ${computerScore}`);
+playGame();
+    console.log(`Round 4:`)
+    console.log(`Your Score: ${humanScore}`);
+    console.log(`Computer Score: ${computerScore}`);
+playGame();
+    console.log(`Round 5:`)
+    console.log(`Your Score: ${humanScore}`);
+    console.log(`Computer Score: ${computerScore}`);
