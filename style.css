@@ -11,10 +11,9 @@
 }
 
 body {
-    background-image: url(images/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #FDBE00;
+    background-image: url(images/bg.png);
+    background-size: 100%;
+
 }
 
 body * {
@@ -57,4 +56,108 @@ ul a {
 
 a:hover {
     color:#eedca7
+}
+
+.panels {
+    margin:50px auto;
+    width:1000px;
+}
+.main-game {
+    align-self:center;
+    flex-direction: row;
+    background-color: #c11d11;
+    width:1000px;
+    height:350px;
+    justify-content: center;
+    border: 5px solid #1a1a1a;
+}
+
+.vs-img {
+    width:200px;
+    height:auto;
+}
+
+.mid-panels {
+    flex-direction: row;
+    align-content: center;
+}
+
+.scoreboard {
+    background-color:#173b61;
+    border: 5px solid #1a1a1a;
+    margin: 10px 5px 10px 0px;
+    width:500px;
+}
+
+.score-titles,.score-count{
+    justify-content: space-between;
+    padding-inline: 30px;
+    font-size: 1.5em;
+    flex-direction: row;
+    font-family: "Bangers";
+    list-style-type: none;
+    color: #f5ecd2;
+}
+
+.score-titles{
+    margin-top: 10px;
+    padding-bottom:5px;
+    border-bottom: 5px solid #1a1a1a;;
+}
+
+.score-count {
+    margin-top: -2px;
+    font-size: 2em;
+    gap:50px;
+    justify-content: space-around;
+}
+
+.processing-panel {
+    background-color:#00995e;
+    border: 5px solid #1a1a1a;
+    margin:10px 0px 10px 5px;
+    width:500px;
+    height: 142.94px;
+    font-family: "Lilita One";
+    color:#1a1a1a;
+    align-items:center;
+    justify-content: center;
+    font-size: 1.7em;
+}
+
+button {
+    width:325px;
+    height: 150px;
+    border:#1a1a1a 5px solid;
+    justify-content: center;
+    align-items: center;
+    background-color: #552cb7;
+}
+
+button:hover {
+    cursor:pointer;
+    background-color: #42228d;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.buttons {
+    width:1000px;
+    height:150px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.buttons img {
+    width:200px;
+    height:auto;
+}
+
+#paper img {
+    height: 115px;
+    width: auto;
+    margin-top: 15px;
 }
