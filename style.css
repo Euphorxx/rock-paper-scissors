@@ -183,7 +183,6 @@ button:active{
 }
 
 .text ul,.text li{
-    border:2px solid red;
     justify-content: space-between;
     padding-inline: 30px;
     flex-direction: row;
