@@ -205,3 +205,35 @@ button:active{
     position:absolute;
     bottom:0;
 }
+
+.tooltip {
+    background-color: #1a1a1a;
+    padding:10px;
+    width: max-content;
+    text-align: center;
+    font-size: 1em;
+    border: 5px solid #eedca7;
+    box-shadow:#1a1a1a 10px 10px 5px;
+}
+
+.tooltip a{
+    text-decoration: none;
+    color:#f5ecd2;
+    padding:10px;
+}
+
+.tooltip .a:hover {
+    color: #eedca7;
+}
+
+.tooltip {
+    display:none;
+    position:absolute;
+    bottom: -20px;
+    right: 20px;
+}
+
+#credits:hover > .tooltip {
+    display: block;
+    margin-bottom: 100px;
+}
