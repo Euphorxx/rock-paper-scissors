@@ -70,6 +70,7 @@ a:hover {
     height:350px;
     justify-content: center;
     border: 5px solid #1a1a1a;
+    box-shadow:#1a1a1a 10px 5px 5px;
 }
 
 .vs-img {
@@ -87,6 +88,7 @@ a:hover {
     border: 5px solid #1a1a1a;
     margin: 10px 5px 10px 0px;
     width:500px;
+    box-shadow:#1a1a1a 5px 5px 5px;
 }
 
 .score-titles,.score-count{
@@ -123,6 +125,7 @@ a:hover {
     align-items:center;
     justify-content: center;
     font-size: 1.7em;
+        box-shadow:#1a1a1a 10px 5px 5px;
 }
 
 button {
@@ -132,16 +135,21 @@ button {
     justify-content: center;
     align-items: center;
     background-color: #552cb7;
+    box-shadow:#1a1a1a 5px 10px 5px;
 }
 
+#scissors {
+    box-shadow:#1a1a1a 10px 10px 5px;
+}
 button:hover {
     cursor:pointer;
     background-color: #42228d;
 }
 
-button:active {
+button:active{
     transform: scale(0.98);
-
+    border: inset #000000 5px ;
+    box-shadow:#1a1a1a 5px 10px 5px;
 }
 
 .buttons {
