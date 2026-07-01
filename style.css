@@ -13,7 +13,8 @@
 body {
     background-image: url(images/bg.png);
     background-size: 100%;
-
+    margin:0;
+    padding:0;
 }
 
 body * {
@@ -22,10 +23,11 @@ body * {
     display: flex;
 }
 
-.nav-border,.footer-border {
+.nav-border{
     background-color:#1a1a1a;
     height:60px;
     justify-content: center;
+    margin-top:5px;
 }
 
 .nav-bar{
@@ -50,12 +52,12 @@ body * {
 
 ul a {
     text-decoration: none;
-    cursor:pointer;
     color:#f5ecd2;
 }
 
-a:hover {
-    color:#eedca7
+a:hover, #credits:hover{
+    color:#eedca7;
+    cursor:pointer;
 }
 
 .panels {
@@ -179,7 +181,7 @@ button:active{
     height:55px;
     align-items: center;
     justify-content: center;
-    color: #f5ecd2
+    color: #f5ecd2;
 }
 
 .text ul,.text li{
@@ -193,4 +195,10 @@ button:active{
 
 .text {
     width:100%;
+}
+
+.footer,.footer-border{
+    width:100%;
+    position:absolute;
+    bottom:0;
 }
