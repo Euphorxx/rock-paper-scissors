@@ -22,13 +22,13 @@ body * {
     display: flex;
 }
 
-.nav-border {
+.nav-border,.footer-border {
     background-color:#1a1a1a;
     height:60px;
     justify-content: center;
 }
 
-.nav-bar {
+.nav-bar{
     position: top;
     background-color: #1a1a1a;
     border: solid #f5ecd2;
@@ -38,7 +38,7 @@ body * {
     justify-content: center;
 }
 
-.logousername ul {
+.logousername ul{
     justify-content: space-between;
     padding-inline: 30px;
     font-size: 2em;
@@ -141,6 +141,7 @@ button:hover {
 
 button:active {
     transform: scale(0.98);
+
 }
 
 .buttons {
@@ -160,4 +161,29 @@ button:active {
     height: 115px;
     width: auto;
     margin-top: 15px;
+}
+
+.footer-sec {
+    flex-direction: row;
+    background-color: #1a1a1a;
+    border-top: solid #f5ecd2;
+    border-inline: 5px;
+    height:55px;
+    align-items: center;
+    justify-content: center;
+    color: #f5ecd2
+}
+
+.text ul,.text li{
+    border:2px solid red;
+    justify-content: space-between;
+    padding-inline: 30px;
+    flex-direction: row;
+    font-family: "Bangers";
+    color:#f5ecd2;
+    list-style-type: none;
+}
+
+.text {
+    width:100%;
 }
