@@ -66,3 +66,21 @@ console.log(`Total Computer Score: ${computerScore}`);
 if (humanScore === computerScore) alert(`You vs Computer: ${humanScore} — ${computerScore} \nIt's a tie! Reload to play again.`);
 if (humanScore > computerScore) alert(`You vs Computer: ${humanScore} — ${computerScore} \nYou Won! Reload to play again.`);
 if (humanScore < computerScore)alert(`You vs Computer: ${humanScore} — ${computerScore} \nYou Lose! Reload to play again.`);
+const credits = document.querySelector("#credits");
+const creditList = document.querySelector(".tooltip");
+
+function creditToggle() {
+let pin = false;
+credits.onmouseenter = () => 
+    creditList.setAttribute('style','display:flex');
+credits.onmouseleave = () => { 
+    if (pin == false) {creditList.removeAttribute('style','display:flex')};
+};
+credits.onclick = () => {
+    pin = !pin;
+    if (pin == true) {creditList.setAttribute('style','display:flex');
+    } else if (pin == false) {creditList.removeAttribute('style','display:flex')}
+};
+};
+
+creditToggle();
