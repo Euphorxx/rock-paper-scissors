@@ -1,24 +1,42 @@
 const rock = 'Rock';
 const paper = 'Paper';
 const scissors = 'Scissors';
+
 let humanScore = 0;
 let computerScore = 0;
+
+let humanChoice;
+let computerChoice;
+
+let humanScoreDisplay = document.querySelector(".human-count");
+humanScoreDisplay.textContent = humanScore;
+let computerScoreDisplay = document.querySelector(".comp-count");
+computerScoreDisplay.textContent = computerScore;
+
+const process = document.querySelector("p");
+
+const rockBtn = document.querySelector("#rock");
+const paperBtn = document.querySelector("#paper");
+const scissorsBtn = document.querySelector("#scissors");
+
+const buttons = document.querySelector(".buttons");
+let selected = false;
+let selectedBtn;
 
 function playGame() {
 
     function getComputerChoice()  {
         const computerSelection = Math.floor(Math.random() * 3) + 1;
-        if (computerSelection === 1) {return (rock);
-        } else if (computerSelection === 2) {return (paper);
-        } else if (computerSelection === 3) {return (scissors)};
+    if (computerSelection === 1) {return (rock), computerChoice = rock;
+    } else if (computerSelection === 2) {return (paper), computerChoice = paper;
+    } else if (computerSelection === 3) {return (scissors), computerChoice = scissors};
 
-    };
-
-    function getHumanChoice(random)  {
-        random = prompt('Rock, Paper or Scissors?').toLowerCase();
-        if (random === 'rock') {return (rock);
-        } else if (random === 'paper') {return (paper);
-        } else if (random === 'scissors') {return (scissors);
+    buttons.onclick = (e) => {
+        selected = true;
+        if (e.target == rockBtn) {selectedBtn = rockBtn, humanChoice = rock;
+        } else if (e.target == paperBtn) {selectedBtn = paperBtn, humanChoice = paper;
+        } else if (e.target == scissorsBtn) {selectedBtn = scissorsBtn, humanChoice = scissors};
+    
         } else if (random != rock || paper || scissors) {return alert('Cancelled')};
     };
 
