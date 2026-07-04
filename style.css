@@ -77,9 +77,43 @@ a:hover, #credits:hover{
     box-shadow:#1a1a1a 10px 5px 5px;
 }
 
-.vs-img {
+.choiceImg {
+    width:1000px;
+    height:300px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.paper-img {
     width:200px;
     height:auto;
+    align-self: center;
+    margin-top:30px;
+}
+
+.rock-img {
+    width:300px;
+    height:auto;
+    align-self:center;
+}
+
+.scissors-img {
+    width:350px;
+    height:auto;
+    align-self:center;
+}
+
+.human-div,.comp-div{
+    width:420px;
+    height:290px;
+    align-content:center;
+    justify-content: center;
+}
+
+.vs-img {
+    width:200px;
+    height:292px;
+    position:absolute;
 }
 
 .mid-panels {
