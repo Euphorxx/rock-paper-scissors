@@ -45,6 +45,26 @@ const compImg = document.querySelector(".comp-opt");
             {selectedBtn = scissorsBtn,humanChoice = scissors};
     phaseOne();
     });
+
+function phaseOne() {
+    // buttons get disabled
+    const btns = document.querySelectorAll('button');
+    Array.from(btns).forEach( function(btn){
+    if (selectedBtn == btn) {btn.classList.add('selected')
+    } else {btn.classList.add('notSelected')};
+    btn.disabled=true;
+    });
+
+    // human choice gets displayed on the red panel
+    if (humanChoice == rock) {humanImg.classList.add('rock-img'), humanImg.setAttribute("src", "images/rock.png");
+    } else if (humanChoice == paper) {humanImg.classList.add('paper-img'), humanImg.setAttribute("src", "images/paper.png");
+    } else if (humanChoice == scissors) {humanImg.classList.add('scissors-img'), humanImg.setAttribute("src", "images/scissors.png");
+    };
+
+    process.textContent = 'Computer is thinking...'
+
+    setTimeout(phaseTwo,1000)
+};
 const credits = document.querySelector("#credits");
 const creditList = document.querySelector(".tooltip");
 
