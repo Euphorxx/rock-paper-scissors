@@ -121,6 +121,7 @@ function phaseThree() {
     if (round == 6) {        
         Array.from(btns).forEach( function(btn){
         btn.disabled=true;
+        btn.classList.add('notSelected');
         });
     }
 };
