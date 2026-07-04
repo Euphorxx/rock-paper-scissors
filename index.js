@@ -84,6 +84,31 @@ function phaseTwo() {
     
     setTimeout(phaseThree,1000)
 };
+function phaseThree() {
+    // enable buttons
+    const btns = document.querySelectorAll('button');
+    Array.from(btns).forEach( function(btn){
+        btn.classList.remove('notSelected');
+        btn.classList.remove('selected');
+        btn.disabled=false;
+    });
+
+    // clear the versus panel
+    humanImg.classList.remove('rock-img'), humanImg.removeAttribute("src", "images/rock.png");
+    humanImg.classList.remove('paper-img'), humanImg.removeAttribute("src", "images/paper.png");
+    humanImg.classList.remove('scissors-img'), humanImg.removeAttribute("src", "images/scissors.png");
+    
+    compImg.classList.remove('rock-img'), compImg.removeAttribute("src", "images/rock.png")
+    compImg.classList.remove('paper-img'), compImg.removeAttribute("src", "images/rock.png")
+    compImg.classList.remove('scissors-img'), compImg.removeAttribute("src", "images/rock.png")
+
+    // remove choices and update the text panel
+    selectedBtn = null;
+    humanChoice = null;
+    computerChoice = null;
+    round++;
+};
+
 const credits = document.querySelector("#credits");
 const creditList = document.querySelector(".tooltip");
 
