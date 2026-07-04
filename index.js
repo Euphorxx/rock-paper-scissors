@@ -107,6 +107,14 @@ function phaseThree() {
     humanChoice = null;
     computerChoice = null;
     round++;
+    if (round == 5) {process.textContent = `Final round!`}
+    else process.textContent = `Round ${round}!`;
+
+    // check if 5 rounds are completed
+        if (round == 6 && humanScore === computerScore) {process.textContent = `It's a tie! Reload to play again.`;
+        } else if (round == 6 && humanScore > computerScore) {process.textContent = `You Won! Reload to play again.`;
+        } else if (round == 6 && humanScore < computerScore) {process.textContent = `Computer Won! Reload to play again.`};
+
 };
 
 const credits = document.querySelector("#credits");
