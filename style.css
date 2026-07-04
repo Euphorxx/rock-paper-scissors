@@ -179,15 +179,22 @@ button {
 #scissors {
     box-shadow:#1a1a1a 10px 10px 5px;
 }
+
 button:hover {
     cursor:pointer;
     background-color: #42228d;
 }
 
-button:active{
+.selected, .selected:hover {
     transform: scale(0.98);
     border: inset #000000 5px ;
     box-shadow:#1a1a1a 5px 10px 5px;
+    background-color: #42228d;
+    cursor:not-allowed;
+}
+
+.notSelected:hover {
+    cursor:not-allowed;
 }
 
 .buttons {
