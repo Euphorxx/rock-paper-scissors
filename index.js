@@ -65,6 +65,25 @@ function phaseOne() {
 
     setTimeout(phaseTwo,1000)
 };
+
+function phaseTwo() {
+    // computer choice chosen and displayed on red panel
+    const computerSelection = Math.floor(Math.random() * 3) + 1;
+    if (computerSelection === 1) {computerChoice = rock, compImg.classList.add('rock-img'), compImg.setAttribute("src", "images/rock.png");
+    } else if (computerSelection === 2) {computerChoice = paper, compImg.classList.add('paper-img'), compImg.setAttribute("src", "images/paper.png");
+    } else if (computerSelection === 3) {computerChoice = scissors, compImg.classList.add('scissors-img'), compImg.setAttribute("src", "images/scissors.png")};
+
+    // round gets evaluated, score updated and displayed
+    if (humanChoice === computerChoice) {process.textContent = `${humanChoice} vs ${computerChoice} — It's a draw!`,updateScore();
+    } else if (humanChoice === rock && computerChoice === paper) { process.textContent = `${humanChoice} vs ${computerChoice} — Computer wins!`, computerScore++,updateScore();
+    } else if (humanChoice === paper && computerChoice === rock) { process.textContent = `${humanChoice} vs ${computerChoice} — You win!`, humanScore++,updateScore();
+    } else if (humanChoice === rock && computerChoice === scissors) { process.textContent = `${humanChoice} vs ${computerChoice} — You win!`, humanScore++,updateScore();
+    } else if (humanChoice === scissors && computerChoice === rock) { process.textContent = `${humanChoice} vs ${computerChoice} — Computer wins!`, computerScore++,updateScore();
+    } else if (humanChoice === paper && computerChoice === scissors) { process.textContent = `${humanChoice} vs ${computerChoice} — Computer wins!`, computerScore++,updateScore();
+    } else if (humanChoice === scissors && computerChoice === paper) { process.textContent = `${humanChoice} vs ${computerChoice} — You win!`, humanScore++,updateScore()};
+    
+    setTimeout(phaseThree,1000)
+};
 const credits = document.querySelector("#credits");
 const creditList = document.querySelector(".tooltip");
 
