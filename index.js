@@ -36,15 +36,15 @@ const compImg = document.querySelector(".comp-opt");
     
 
 // initiation phase, listen for click and store human choice
-    buttons.addEventListener('click', (e) => {
+    rockBtn.onclick = (e) => {
         if (e.target == rockBtn || e.target == rockBtnImg) 
-            {selectedBtn = rockBtn,humanChoice = rock
-        } else if (e.target == paperBtn || e.target == paperBtnImg) 
-            {selectedBtn = paperBtn,humanChoice = paper
-        } else if (e.target == scissorsBtn || e.target == scissorsBtnImg) 
-            {selectedBtn = scissorsBtn,humanChoice = scissors};
-    phaseOne();
-    });
+            selectedBtn = rockBtn, humanChoice = rock, phaseOne()};
+    paperBtn.onclick = (e) => {
+        if (e.target == paperBtn || e.target == paperBtnImg) 
+            selectedBtn = paperBtn, humanChoice = paper, phaseOne()};
+    scissorsBtn.onclick = (e) => {
+        if (e.target == scissorsBtn || e.target == scissorsBtnImg) 
+            selectedBtn = scissorsBtn, humanChoice = scissors, phaseOne()};
 
 function phaseOne() {
     // buttons get disabled
